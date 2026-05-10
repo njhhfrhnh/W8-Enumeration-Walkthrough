@@ -1,4 +1,4 @@
-# Chapter 5 Enumeration Lab Challenge 
+# W8 Enumeration Lab Challenge 
 
 ## **Kali Linux**
 
