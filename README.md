@@ -279,6 +279,3 @@ SMTP enumeration confirmed that the target system exposes an SMTP service on por
 
 ---
 
-# Conclusion
-
-The enumeration process successfully identified multiple exposed services, software versions, SMB information disclosures, weak authentication configurations, and network file-sharing misconfigurations on the Metasploitable 2 target machine. Enumeration activities revealed several potential attack surfaces including FTP, SMB, NFS, SMTP, databases, and outdated network services.
