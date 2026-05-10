@@ -9,7 +9,7 @@
 | Attacker Machine  | Kali Linux                               |
 
 ---
-## Basic Enumeration
+# Basic Enumeration
 
 ## Challenge 2 — Fast Nmap Scan
 
