@@ -1,7 +1,5 @@
 # W8 Enumeration Lab Challenge 
 
-## **Kali Linux**
-
 ## Target Information
 
 | Item              | Value                                    |
@@ -22,7 +20,7 @@ nmap -F 192.168.100.198
 ```
 <img width="546" height="370" alt="image" src="https://github.com/user-attachments/assets/aeddfac9-e69f-44fb-81e2-b362eee931cf" />
 
-Findings:
+### Findings:
 | Port | Service      |
 | ---- | ------------ |
 | 21   | FTP          |
@@ -44,7 +42,7 @@ The target machine exposed multiple network services, increasing the attack surf
 
 ---
 
-# Challenge 4 — SNMPwalk
+## Challenge 4 — SNMPwalk
 
 To determine whether the target system exposes SNMP services for information enumeration.
 
@@ -57,7 +55,7 @@ nmap -sU -p161 192.168.100.198
 ```
 <img width="576" height="201" alt="image" src="https://github.com/user-attachments/assets/9e399296-5f78-4225-bd35-37a73020a6c5" />
 
-Findings:
+### Findings:
 
 ```text
 161/udp closed snmp
@@ -67,7 +65,7 @@ SNMP services were not available on the target machine. Since UDP port 161 was c
 
 ---
 
-# Challenge 5 — TTL OS Fingerprinting
+## Challenge 5 — TTL OS Fingerprinting
 
 To identify the target operating system based on observed TTL values.
 
@@ -77,7 +75,7 @@ ping 192.168.100.198
 
 <img width="440" height="176" alt="image" src="https://github.com/user-attachments/assets/8ceab714-e276-400f-92f0-8562e3282ff8" />
 
-Findings:
+### Findings:
 
 ```text
 ttl=64
@@ -87,7 +85,7 @@ TTL fingerprinting indicated that the target machine is likely running a Linux-b
 
 ---
 
-# Challenge 9 — FTP Banner Enumeration
+## Challenge 9 — FTP Banner Enumeration
 
 To identify the FTP service version running on the target machine.
 
@@ -98,7 +96,7 @@ nc 192.168.100.198 21
 
 <img width="277" height="42" alt="image" src="https://github.com/user-attachments/assets/ecd9bfd5-39d3-4d6d-975e-52801eb7605a" />
 
-Findings:
+### Findings:
 
 ```text
 220 (vsFTPd 2.3.4)
@@ -108,7 +106,7 @@ The FTP banner disclosed the exact FTP software version. Version disclosure may 
 
 ---
 
-# Challenge 10 — Anonymous FTP Login
+## Challenge 10 — Anonymous FTP Login
 
 To determine whether the FTP server allows anonymous authentication.
 
@@ -118,7 +116,7 @@ ftp 192.168.100.198
 
 <img width="490" height="202" alt="image" src="https://github.com/user-attachments/assets/f367f54b-774a-45b8-be09-a4e11b2143ea" />
 
-Findings:
+### Findings:
 
 ```text
 230 Login successful.
@@ -131,7 +129,7 @@ Allowing anonymous FTP authentication may expose sensitive files and permit unau
 ---
 ## **Intermediate Enumeration**
 
-# Challenge 11 — SMB NSE Enumeration
+## Challenge 11 — SMB NSE Enumeration
 
 To enumerate SMB information including operating system, domain, and NetBIOS details.
 
@@ -141,7 +139,7 @@ nmap --script smb-os-discovery -p445 192.168.100.198
 
 <img width="602" height="218" alt="image" src="https://github.com/user-attachments/assets/8214c40b-05d1-43b4-8378-d8b7e03b2533" />
 
-Findings:
+### Findings:
 
 | Information   | Result                     |
 | ------------- | -------------------------- |
@@ -155,11 +153,9 @@ SMB enumeration successfully disclosed operating system information, domain deta
 
 ---
 
-# Challenge 12 — Enum4linux
+## Challenge 12 — Enum4linux
 
 To perform detailed SMB enumeration against the target system.
-
-## Command Used
 
 ```bash
 enum4linux -a 192.168.100.198
@@ -171,7 +167,7 @@ enum4linux -a 192.168.100.198
 <img width="602" height="360" alt="image" src="https://github.com/user-attachments/assets/8ed8f995-5cee-439b-a0e3-577629372913" />
 <img width="602" height="417" alt="image" src="https://github.com/user-attachments/assets/08d511d1-d308-411d-8358-19383401cdd1" />
 
-Findings:
+### Findings:
 
 ### Workgroup Information
 ```text
@@ -204,7 +200,7 @@ Enum4linux revealed extensive SMB information including usernames, shares and we
 
 ---
 
-# Challenge 13 — NFS Exports
+## Challenge 13 — NFS Exports
 
 To enumerate exported NFS shares from the target system.
 
@@ -224,7 +220,7 @@ The root directory was exported to all hosts without restriction. Misconfigured 
 
 ---
 
-# Challenge 16 — Version Detection
+## Challenge 16 — Version Detection
 
 To identify software versions running on exposed network services.
 
@@ -254,7 +250,7 @@ Version detection identified multiple outdated services that may contain publicl
 
 ## **Advanced Enumeration**
 
-# Challenge 29 — SMTP Enumeration via Nmap
+## Challenge 29 — SMTP Enumeration via Nmap
 
 To enumerate SMTP-related information and test for open relay vulnerabilities.
 
