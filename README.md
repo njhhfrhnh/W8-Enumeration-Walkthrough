@@ -1,7 +1,6 @@
-# W8-Enumeration-Walkthrough
 # Chapter 5 Enumeration Lab Challenge 
 
-# **Kali Linux**
+## **Kali Linux**
 
 ## Target Information
 
@@ -10,12 +9,11 @@
 | Target Machine    | Metasploitable 2                         |
 | Target IP Address | 192.168.100.198                          |
 | Attacker Machine  | Kali Linux                               |
-| Enumeration Tools | Nmap, Enum4linux, FTP, Netcat, Showmount |
 
 ---
 ## **Basic Enumeration**
 
-# Challenge 2 — Fast Nmap Scan
+## Challenge 2 — Fast Nmap Scan
 
 To identify open ports and active network services on the target machine using a fast Nmap scan.
 
