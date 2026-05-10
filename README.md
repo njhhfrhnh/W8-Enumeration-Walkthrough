@@ -127,7 +127,7 @@ Anonymous login was accepted successfully.
 Allowing anonymous FTP authentication may expose sensitive files and permit unauthorized access to shared resources.
 
 ---
-## **Intermediate Enumeration**
+# Intermediate Enumeration
 
 ## Challenge 11 — SMB NSE Enumeration
 
@@ -248,7 +248,7 @@ Version detection identified multiple outdated services that may contain publicl
 
 ---
 
-## **Advanced Enumeration**
+# Advanced Enumeration
 
 ## Challenge 29 — SMTP Enumeration via Nmap
 
