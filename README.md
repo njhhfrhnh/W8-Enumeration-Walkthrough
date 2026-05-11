@@ -6,7 +6,7 @@
 | ----------------- | ---------------------------------------- |
 | Target Machine    | Metasploitable 2                         |
 | Target IP Address | 192.168.100.198                          |
-| Attacker Machine  | Kali Linux                               |
+| Attacker Machine  | Kali Linux, Windows                      |
 
 ---
 # Basic Enumeration
@@ -19,6 +19,9 @@ To identify open ports and active network services on the target machine using a
 nmap -F 192.168.100.198
 ```
 <img width="546" height="370" alt="image" src="https://github.com/user-attachments/assets/aeddfac9-e69f-44fb-81e2-b362eee931cf" />
+
+<img width="668" height="676" alt="image" src="https://github.com/user-attachments/assets/01e1f1c0-664c-433f-a425-73d9d5cb7527" />
+
 
 ### Findings:
 | Port | Service      |
