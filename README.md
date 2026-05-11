@@ -120,6 +120,8 @@ ftp 192.168.100.198
 
 <img width="490" height="202" alt="image" src="https://github.com/user-attachments/assets/f367f54b-774a-45b8-be09-a4e11b2143ea" />
 
+<img width="390" height="135" alt="image" src="https://github.com/user-attachments/assets/da484816-f3fb-4e97-b19c-4a5908f84cfe" />
+
 ### Findings:
 
 ```text
@@ -142,6 +144,9 @@ nmap --script smb-os-discovery -p445 192.168.100.198
 ```
 
 <img width="602" height="218" alt="image" src="https://github.com/user-attachments/assets/8214c40b-05d1-43b4-8378-d8b7e03b2533" />
+
+<img width="657" height="672" alt="image" src="https://github.com/user-attachments/assets/9dd87ad4-ee59-45e0-99ef-f07e2ee2bb76" />
+
 
 ### Findings:
 
