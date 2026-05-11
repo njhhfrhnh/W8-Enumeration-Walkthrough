@@ -78,8 +78,7 @@ ping 192.168.100.198
 
 <img width="440" height="176" alt="image" src="https://github.com/user-attachments/assets/8ceab714-e276-400f-92f0-8562e3282ff8" />
 
-<img width="667" height="657" alt="image" src="https://github.com/user-attachments/assets/80de9f09-18ef-46f5-9b3a-cbca4fef38c8" />
-
+<img width="590" height="307" alt="image" src="https://github.com/user-attachments/assets/a05a8785-fbc0-4b80-8c46-872d3981fec5" />
 
 ### Findings:
 
